@@ -1,0 +1,5 @@
+@music = http://localhost:5121/api
+
+###
+GET {{music}}/version
+###
