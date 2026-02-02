@@ -16,8 +16,8 @@ services:
    volumes:
      - ./sql:/docker-entrypoint-initdb.d
     #  - ./dbdata:/var/lib/postgresql/data
-   # ports:
-   #   - 5432:5432
+   ports:
+     - 5432:5432
    # command: ["postgres", "-c", "log_statement=all"] # Enables verbose logging
 
     

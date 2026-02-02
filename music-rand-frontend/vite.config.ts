@@ -8,5 +8,6 @@ export default defineConfig({
   build: {
     outDir: "../MusicAPI/wwwroot",
     emptyOutDir: true,
-  },
+  }
+  // Proxy is not needed, we are hosting through the API
 })
