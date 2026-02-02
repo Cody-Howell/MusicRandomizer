@@ -1,4 +1,4 @@
-@music = http://localhost:5121/api
+@music = http://localhost:4110/api
 
 ###
 GET {{music}}/version

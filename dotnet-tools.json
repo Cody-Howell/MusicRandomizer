@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "howldev.cli.textdto": {
+      "version": "0.1.1",
+      "commands": [
+        "textdto"
+      ],
+      "rollForward": false
+    }
+  }
+}
