@@ -1,6 +1,6 @@
 {
   "name": "WebInformation", 
-  "namespace": "MusicAPI.Models", 
+  "namespace": "MusicAPI.Dtos", 
   "properties": [
     {
       "name": "Id", 
@@ -17,7 +17,7 @@
       "default": "" 
     },
     {
-      "name": "Author Route", 
+      "name": "AuthorRoute", 
       "type": "string",
       "default": "" 
     },
