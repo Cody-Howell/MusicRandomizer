@@ -20,6 +20,7 @@ app.MapGet("/api/health", () => "Hello");
 string prefix = "/api";
 
 app.MapVersionEndpoint(prefix);
+app.MapWebEndpoints(prefix);
 
 app.MapFallbackToFile("index.html");
 
