@@ -1,0 +1,1 @@
+textdto ./dtos cs ./MusicAPI/Dtos ts-z ./music-rand-frontend/dtos

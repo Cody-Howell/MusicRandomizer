@@ -1,5 +1,6 @@
 using HowlDev.Web.Helpers.DbConnector;
 using MusicAPI;
+using MusicAPI.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,9 @@ app.UseRouting();
 
 app.MapGet("/api/health", () => "Hello");
 
-app.MapMusicEndpoints("/api");
+string prefix = "/api";
+
+app.MapVersionEndpoint(prefix);
 
 app.MapFallbackToFile("index.html");
 

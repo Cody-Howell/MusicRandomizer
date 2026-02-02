@@ -1,0 +1,30 @@
+{
+  "name": "WebInformation", 
+  "namespace": "MusicAPI.Models", 
+  "properties": [
+    {
+      "name": "Id", 
+      "type": "int"
+    },
+    {
+      "name": "Name", 
+      "type": "string",
+      "default": "Unknown name" 
+    },
+    {
+      "name": "Info", 
+      "type": "string",
+      "default": "" 
+    },
+    {
+      "name": "Author Route", 
+      "type": "string",
+      "default": "" 
+    },
+    {
+      "name": "Seed", 
+      "type": "int",
+      "default": "1" 
+    }
+  ]
+}
