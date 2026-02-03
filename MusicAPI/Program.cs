@@ -42,9 +42,6 @@ builder.Services.Configure<Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServe
 
 var app = builder.Build();
 
-// Use CORS
-app.UseCors();
-
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseRouting();
