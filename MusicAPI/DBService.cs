@@ -42,6 +42,17 @@ public class DBService(DbConnector conn) {
         }
     );
 
+    public Task<byte[]?> GetAudioData(int id) =>
+        conn.WithConnectionAsync(async conn => {
+            var getAudio = "SELECT audio as AudioData FROM audio WHERE id = @Id";
+            try {
+                return await conn.QuerySingleOrDefaultAsync<byte[]>(getAudio, new { Id = id });
+            } catch {
+                return null;
+            }
+        }
+    );
+
     public Task<IEnumerable<Audio>> GetAllAudio() =>
         conn.WithConnectionAsync(async conn => {
             var getAllAudio = "SELECT id as Id, userGivenName as UserGivenName, author as Author, audio as AudioData FROM audio";

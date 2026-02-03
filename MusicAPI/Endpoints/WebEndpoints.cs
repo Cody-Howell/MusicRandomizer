@@ -83,12 +83,12 @@ public static class WebEndpoints {
         .WithMetadata(new Microsoft.AspNetCore.Mvc.RequestSizeLimitAttribute(104857600)); // 100 MB limit
 
         app.MapGet(start + "/audio/{id}", async (DBService service, int id) => {
-            var audio = await service.GetAudio(id);
+            var audio = await service.GetAudioData(id);
             
             if (audio == null)
                 return Results.NotFound("Audio not found");
 
-            return Results.File(audio.AudioData!, "audio/mpeg", $"{audio.UserGivenName}.mp3");
+            return Results.File(audio!, "audio/mpeg");
         });
 
         app.MapGet(start + "/audio/{id}/info", async (DBService service, int id) => {
