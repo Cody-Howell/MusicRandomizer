@@ -9,6 +9,12 @@ var connString = builder.Configuration.GetConnectionString("PostgresConnection")
 builder.Services.AddSingleton<DBService>();
 builder.Services.AddSingleton<DbConnector>();
 
+// Configure JSON serializer to preserve PascalCase property names
+builder.Services.ConfigureHttpJsonOptions(options =>
+{
+    options.SerializerOptions.PropertyNamingPolicy = null;
+});
+
 // Add CORS
 builder.Services.AddCors(options =>
 {
