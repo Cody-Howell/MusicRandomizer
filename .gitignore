@@ -4,5 +4,4 @@ obj/
 .vscode/
 .vs/
 wwwroot/
-dtos/
-Dtos/
+*/[Dd]tos/

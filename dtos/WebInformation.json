@@ -1,6 +1,7 @@
 {
   "name": "WebInformation", 
   "namespace": "MusicAPI.Dtos", 
+  "type": "Class",
   "properties": [
     {
       "name": "Id", 

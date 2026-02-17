@@ -1,0 +1,25 @@
+{
+  "name": "NodeTarget", 
+  "namespace": "MusicAPI.Dtos", 
+  "type": "Class",
+  "properties": [
+    {
+      "name": "Id", 
+      "type": "int"
+    },
+    {
+      "name": "Name", 
+      "type": "string",
+      "default": "" 
+    },
+    {
+      "name": "Index", 
+      "type": "int",
+      "nullable": true 
+    },
+    {
+      "name": "Weight", 
+      "type": "int[]"
+    }
+  ]
+}

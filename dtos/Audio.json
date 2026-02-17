@@ -1,0 +1,21 @@
+{
+  "name": "Audio", 
+  "namespace": "MusicAPI.Dtos", 
+  "type": "Class",
+  "properties": [
+    {
+      "name": "Id", 
+      "type": "int"
+    },
+    {
+      "name": "UserGivenName", 
+      "type": "string",
+      "default": "" 
+    },
+    {
+      "name": "Author", 
+      "type": "string",
+      "default": "" 
+    }
+  ]
+}

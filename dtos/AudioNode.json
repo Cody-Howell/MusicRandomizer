@@ -1,0 +1,42 @@
+{
+  "name": "AudioNode", 
+  "namespace": "MusicAPI.Dtos", 
+  "type": "Class",
+  "properties": [
+    {
+      "name": "Id", 
+      "type": "int"
+    },
+    {
+      "name": "Title", 
+      "type": "string",
+      "default": "" 
+    },
+    {
+      "name": "Artist", 
+      "type": "string",
+      "default": "" 
+    },
+    {
+      "name": "AudioId", 
+      "type": "int"
+    },
+    {
+      "name": "LengthToNext", 
+      "type": "int"
+    },
+    {
+      "name": "Start", 
+      "type": "double"
+    },
+    {
+      "name": "Next", 
+      "type": "NodeTarget[]"
+    },
+    {
+      "name": "Author", 
+      "type": "string",
+      "default": "" 
+    }
+  ]
+}
