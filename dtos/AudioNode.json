@@ -31,7 +31,8 @@
     },
     {
       "name": "Next", 
-      "type": "NodeTarget[]"
+      "type": "NodeTarget[]", 
+      "default": "[]"
     },
     {
       "name": "Author", 

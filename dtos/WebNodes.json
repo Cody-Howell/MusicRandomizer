@@ -1,0 +1,11 @@
+{
+  "name": "WebNodes", 
+  "namespace": "MusicAPI.Dtos", 
+  "type": "Class",
+  "properties": [
+    {
+      "name": "Nodex", 
+      "type": "AudioNode[]"
+    }
+  ]
+}
