@@ -1,0 +1,23 @@
+{
+  "name": "RuleFunction", 
+  "namespace": "MusicAPI.Dtos", 
+  "type": "Class",
+  "properties": [
+    {
+      "name": "Index", 
+      "type": "int"
+    },
+    {
+      "name": "Action", 
+      "type": "RuleAction"
+    },
+    {
+      "name": "Amount", 
+      "type": "int"
+    },
+    {
+      "name": "Condition", 
+      "type": "RuleCondition"
+    }
+  ]
+}

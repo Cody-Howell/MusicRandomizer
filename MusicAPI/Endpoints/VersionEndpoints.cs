@@ -1,3 +1,5 @@
+using MusicAPI.DBFiles;
+
 namespace MusicAPI.Endpoints;
 
 public static class VersionEndpoints {

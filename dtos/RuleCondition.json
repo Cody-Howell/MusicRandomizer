@@ -1,0 +1,67 @@
+{
+  "name": "RuleCondition",
+  "namespace": "MusicAPI.Dtos",
+  "type": "Class",
+  "properties": [
+    {
+      "name": "DayOfWeek",
+      "type": "int",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "HourAbove",
+      "type": "int",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "HourBelow",
+      "type": "int",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "RandomChanceBelow",
+      "type": "int",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "Visited",
+      "type": "string",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "Previous",
+      "type": "string",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "SequenceMatches",
+      "type": "string[]",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "SequenceBroken",
+      "type": "string[]",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "TotalCountExceeds",
+      "type": "int",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "UserInput",
+      "type": "int",
+      "nullable": true,
+      "default": null
+    }
+  ]
+}

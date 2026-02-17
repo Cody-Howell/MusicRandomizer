@@ -1,5 +1,5 @@
 using HowlDev.Web.Helpers.DbConnector;
-using MusicAPI;
+using MusicAPI.DBFiles;
 using MusicAPI.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -52,6 +52,7 @@ string prefix = "/api";
 
 app.MapVersionEndpoint(prefix);
 app.MapWebEndpoints(prefix);
+app.MapAudioEndpoints(prefix);
 
 app.MapFallbackToFile("index.html");
 

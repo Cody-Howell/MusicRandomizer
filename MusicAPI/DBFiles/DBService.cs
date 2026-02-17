@@ -2,7 +2,7 @@ using Dapper;
 using HowlDev.Web.Helpers.DbConnector;
 using MusicAPI.Dtos;
 
-namespace MusicAPI;
+namespace MusicAPI.DBFiles;
 
 public class DBService(DbConnector conn) {
     public Task<int> GetVersion() =>

@@ -4,8 +4,9 @@
   "type": "Class",
   "properties": [
     {
-      "name": "Nodex", 
-      "type": "AudioNode[]"
+      "name": "Nodes", 
+      "type": "AudioNode[]", 
+      "default": "[]"
     }
   ]
 }

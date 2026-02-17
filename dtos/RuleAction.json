@@ -1,0 +1,8 @@
+{
+  "name": "RuleAction", 
+  "namespace": "MusicAPI.Dtos", 
+  "type": "Enum",
+  "properties": [
+    "Set", "Increment", "Decrement", "Toggle"
+  ]
+}
