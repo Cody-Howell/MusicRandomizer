@@ -4,12 +4,12 @@
   "type": "Class",
   "properties": [
     {
-      "name": "init", 
+      "name": "Init", 
       "type": "RuleFunction[]", 
       "default": "[]"
     },
     {
-      "name": "running", 
+      "name": "Running", 
       "type": "RuleFunction[]", 
       "default": "[]"
     }

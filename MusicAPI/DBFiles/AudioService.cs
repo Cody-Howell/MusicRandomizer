@@ -4,7 +4,7 @@ using MusicAPI.Dtos;
 
 namespace MusicAPI.DBFiles;
 
-public class DBService(DbConnector conn) {
+public partial class DBService(DbConnector conn) {
     public Task<int> GetVersion() =>
         conn.WithConnectionAsync(async conn => {
             var GetVersion = "select v from web_version";
