@@ -1,0 +1,15 @@
+{
+  "name": "ArrayRules", 
+  "namespace": "MusicAPI.Dtos", 
+  "type": "Class",
+  "properties": [
+    {
+      "name": "End", 
+      "type": "int"
+    },
+    {
+      "name": "Loop", 
+      "type": "bool"
+    }
+  ]
+}

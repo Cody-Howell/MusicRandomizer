@@ -1,0 +1,17 @@
+{
+  "name": "RulesObject", 
+  "namespace": "MusicAPI.Dtos", 
+  "type": "Class",
+  "properties": [
+    {
+      "name": "init", 
+      "type": "RuleFunction[]", 
+      "default": "[]"
+    },
+    {
+      "name": "running", 
+      "type": "RuleFunction[]", 
+      "default": "[]"
+    }
+  ]
+}
