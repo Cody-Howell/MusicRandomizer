@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Dapper;
 using MusicAPI.Dtos;
 
@@ -65,7 +66,7 @@ public partial class DBService {
                             Id = target.Id,
                             Name = target.Name,
                             Index = target.Index,
-                            Weight = System.Text.Json.JsonSerializer.Deserialize<int[]>(target.Weight ?? "[]") ?? []
+                            Weight = JsonSerializer.Deserialize<int[]>(target.Weight ?? "[]") ?? []
                         };
                         currentNode.Next = [.. currentNode.Next, nodeTarget];
                     }
