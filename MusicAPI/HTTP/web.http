@@ -3,6 +3,8 @@
 ###
 GET {{music}}/web
 ###
+GET {{music}}/web/2
+###
 POST {{music}}/web
 Content-Type: application/json
 

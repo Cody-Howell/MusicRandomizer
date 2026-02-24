@@ -1,3 +1,5 @@
+set -e
+
 cd music-rand-frontend
 
 pnpm run build 
