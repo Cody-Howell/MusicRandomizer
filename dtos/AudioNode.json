@@ -33,11 +33,6 @@
       "name": "Next", 
       "type": "NodeTarget[]", 
       "default": "[]"
-    },
-    {
-      "name": "Author", 
-      "type": "string",
-      "default": "" 
     }
   ]
 }
