@@ -1,0 +1,55 @@
+@music = http://localhost:4110/api
+@id = 1
+
+###
+GET {{music}}/web/{{id}}/nodes
+### 
+# Returns type: 
+# {
+#   "Nodes": [
+#     {
+#       "Id": 1,
+#       "Title": "AA",
+#       "Artist": "Cody Howell",
+#       "AudioId": 1,
+#       "LengthToNext": 1500,
+#       "Start": 0,
+#       "Next": [
+#         {
+#           "Id": 1,
+#           "Name": "AB",
+#           "Index": null,
+#           "Weight": [
+#             1
+#           ]
+#         }
+#       ]
+#     },
+#     {
+#       "Id": 2,
+#       "Title": "AB",
+#       "Artist": "Cody Howell",
+#       "AudioId": 1,
+#       "LengthToNext": 1000,
+#       "Start": 0,
+#      "Next": [
+#        {
+#          "Id": 2,
+#          "Name": "AA",
+#          "Index": null,
+#          "Weight": [
+#            1
+#          ]
+#        },
+#        {
+#          "Id": 3,
+#          "Name": "AC",
+#          "Index": null,
+#          "Weight": [
+#            1
+#          ]
+#        }
+#      ]
+#     }
+#   ]
+# }
