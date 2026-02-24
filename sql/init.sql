@@ -20,16 +20,19 @@ CREATE TABLE web_info(
 
 CREATE TABLE web_nodes(
     id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY NOT NULL,
+    webId int references web_info(id) NOT NULL,
     title varchar(50) NOT NULL, 
     artist varchar(100) NOT NULL, 
     audioId int references audio(id) NOT NULL,
     lengthToNext int NOT NULL, 
-    start real NOT NULL
+    start real NOT NULL, 
+    UNIQUE (webId, title) 
 );
 
 CREATE TABLE node_targets(
     id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY NOT NULL,
-    target varchar(50) references web_nodes(title) NOT NULL, 
+    nodeId int references web_nodes(id) NOT NULL,
+    target int references web_nodes(id) NOT NULL, 
     index int NULL, 
     weight json NOT NULL
 );
