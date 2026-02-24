@@ -1,0 +1,15 @@
+@music = http://localhost:4110/api
+
+###
+GET {{music}}/web
+###
+POST {{music}}/web
+Content-Type: application/json
+
+{
+    "id": 0, 
+    "webName": "Cody's web 2", 
+    "info": "Lorem", 
+    "authorsRoute": ""
+}
+###

@@ -8,7 +8,7 @@
       "type": "int"
     },
     {
-      "name": "Name", 
+      "name": "WebName", 
       "type": "string",
       "default": "Unknown name" 
     },
@@ -21,11 +21,6 @@
       "name": "AuthorRoute", 
       "type": "string",
       "default": "" 
-    },
-    {
-      "name": "Seed", 
-      "type": "int",
-      "default": "1" 
     }
   ]
 }

@@ -1,7 +1,8 @@
 using MusicAPI.DBFiles;
 using MusicAPI.Dtos;
 
-namespace MusicAPI.Endpoints; 
+namespace MusicAPI.Endpoints;
+
 public static class AudioEndpoints {
     public static WebApplication MapAudioEndpoints(this WebApplication app, string start) {
         // Audio endpoints

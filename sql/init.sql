@@ -10,3 +10,10 @@ CREATE TABLE audio(
     author varchar(200) NOT NULL,
     audio bytea NOT NULL
 );
+
+CREATE TABLE web_info(
+    id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY NOT NULL,
+    webName varchar(200) NOT NULL, 
+    info varchar(200) NOT NULL,
+    authorRoute varchar(500) NOT NULL
+);

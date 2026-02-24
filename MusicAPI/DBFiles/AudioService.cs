@@ -20,10 +20,10 @@ public partial class DBService(DbConnector conn) {
         conn.WithConnectionAsync(async conn => {
             var insertAudio = "INSERT INTO audio (userGivenName, author, audio) VALUES (@UserGivenName, @Author, @AudioData) RETURNING id";
             try {
-                return await conn.QuerySingleAsync<int>(insertAudio, new { 
-                    UserGivenName = userGivenName, 
-                    Author = author, 
-                    AudioData = audioData 
+                return await conn.QuerySingleAsync<int>(insertAudio, new {
+                    UserGivenName = userGivenName,
+                    Author = author,
+                    AudioData = audioData
                 });
             } catch {
                 return 0;
