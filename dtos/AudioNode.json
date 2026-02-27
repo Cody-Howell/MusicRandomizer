@@ -2,6 +2,7 @@
   "name": "AudioNode", 
   "namespace": "MusicAPI.Dtos", 
   "type": "Class",
+  "ignoreWarnings": true,
   "properties": [
     {
       "name": "Id", 

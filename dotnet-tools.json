@@ -3,7 +3,7 @@
   "isRoot": true,
   "tools": {
     "howldev.cli.textdto": {
-      "version": "0.3.5",
+      "version": "0.4.0-beta",
       "commands": [
         "textdto"
       ],

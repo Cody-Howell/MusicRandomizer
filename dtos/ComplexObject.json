@@ -2,6 +2,7 @@
   "name": "ComplexObject", 
   "namespace": "MusicAPI.Dtos", 
   "type": "Class",
+  "ignoreWarnings": true,
   "properties": [
     {
       "name": "SetArray", 
@@ -14,7 +15,8 @@
     },
     {
       "name": "ArrayRules", 
-      "type": "ArrayRules[]"
+      "type": "ArrayRules[]", 
+      "default": "[]"
     }
   ]
 }

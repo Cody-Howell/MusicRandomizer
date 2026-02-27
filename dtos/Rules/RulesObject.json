@@ -2,6 +2,7 @@
   "name": "RulesObject", 
   "namespace": "MusicAPI.Dtos", 
   "type": "Class",
+  "ignoreWarnings": true,
   "properties": [
     {
       "name": "Init", 
